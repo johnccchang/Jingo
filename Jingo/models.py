@@ -30,7 +30,7 @@ class Log_Keywords(models.Model, HttpRequestResponser, Formatter):
         
     def logUserKeywords(self, data, keywords):
         #currenttime         = timezone.now()
-        currenttime         = JingoTimezone.getLocalTime()
+        currenttime         = JingoTimezone().getLocalTime()
         data['u_longitude'] = "%.6f" % float(data['u_longitude'])
         data['u_latitude']  = "%.6f" % float(data['u_latitude'])
         for keyword in keywords:

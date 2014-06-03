@@ -17,8 +17,8 @@ DATABASES = {
         'NAME': 'jingodb', # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': '2012nyudatabase',
-        'HOST': '', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PASSWORD': '2012db',
+        'HOST': '/usr/local/zend/mysql/tmp/mysql.sock', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '', # Set to empty string for default.
     }
 }

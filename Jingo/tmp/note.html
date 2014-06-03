@@ -1,5 +1,5 @@
 <div class="container note-container" poster-uid="{{ poster.uid }}">
-    <div class="note-btns">{{ poster.u_name }} {{ is_friendship }}
+    <div class="note-btns">{{ poster.u_name }} {% comment %}{{is_friendship }} {% endcomment %}
         <button class="btn btn-mini follow-friend btn-primary" type="button"
                 {% if is_friendship == 2 or is_friendship == 4 or is_friendship == 1 %}style="display: none;"{% endif %}>Follow
         </button>
